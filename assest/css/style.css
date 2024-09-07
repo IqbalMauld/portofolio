@@ -200,7 +200,7 @@ header{
 .about main div{
     width: 300px;
     height: 150px;
-     background: linear-gradient(to right, rgba(50, 50, 50, 0.318), var(--green));
+     background-color: var(--green);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -210,9 +210,11 @@ header{
     border-radius: 10px;
     transition: 0.2s;
     cursor: pointer;
+    box-shadow: 2px 2px var(--primary2);
+    opacity: 0.8; 
 }
 .about main div:hover{
-    background: linear-gradient(to left, var(--green), rgba(50, 50, 50, 0.318));
+    opacity: 1;
 }
 /* About End */
 
