@@ -200,7 +200,7 @@ header{
 .about main div{
     width: 300px;
     height: 150px;
-    background: linear-gradient(to right, var(--green), rgba(50, 50, 50, 0.318));
+     background: linear-gradient(to right, rgba(50, 50, 50, 0.318), var(--green));
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -292,6 +292,14 @@ header{
         width: 10px;
     }
     /*Hero end */
+        /* ABout start */
+    .about main{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    /* ABout End */
 }
 
 @media (max-width: 769px){
@@ -356,4 +364,12 @@ header{
     .right img{
         width: 100px;
     }
+        /* ABout start */
+    .about main{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    /* ABout End */
 }
