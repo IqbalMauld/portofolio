@@ -259,10 +259,8 @@ header{
     flex-direction: column;
     /* justify-content: center; */
     /* align-items: center; */
-    /* width: 200px; */
+    color: var(--primary2);
     /* background-color: red; */
-}
-.pendidikan{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -270,13 +268,23 @@ header{
     width: 200px;
     /* background-color: red; */
 }
-.skill{
+.about main div{
+    width: 300px;
+    height: 150px;
+     background: linear-gradient(to right, rgba(50, 50, 50, 0.318), var(--green));
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 200px;
-    /* background-color: red; */
+    flex-direction: column;
+    color: var(--primary2);
+    font-family: sans-serif;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.about main div:hover{
+    background: linear-gradient(to left, var(--green), rgba(50, 50, 50, 0.318));
 }
 
 /* About End */
