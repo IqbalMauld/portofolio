@@ -190,8 +190,8 @@ header{
 }
 .about main{
     /* align-items: center; */
-    color: var(--primary2);
-    /* background-color: red; */
+    color: var(--primar-primary1);
+               /* background-color: red; */
     display: flex;
     gap: 30px;
     padding: 50px;
