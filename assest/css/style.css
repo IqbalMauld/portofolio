@@ -167,53 +167,118 @@ header{
 /* About Start */
 .about{
     width: 100%;
-    flex-direction: column;
+    padding: 10px;
     min-height: 100vh;
-    justify-content: center;
-    display: flex;
-    color: var(--primary2);
-    padding: 100px;
-    background-color: var(--primary1);
-    /* background-color: var(--primary1); */
-}
-.about h1{
     display: flex;
     justify-content: center;
-    font-size: 30px;
-    font-family: sans-serif;
-    /* margin-left: 100px ; */
-    /* width: 100%; */
-    gap: 4px;
-}
-.about h1 span{
-    color: var(--green2);
+    align-items: center;
+    font-family: 'poppins', sans-serif;
 }
 .about main{
-    /* align-items: center; */
-    color: var(--primary2);
+    width: 80%;
     /* background-color: red; */
     display: flex;
-    gap: 30px;
-    padding: 50px;
     justify-content: center;
+    gap: 20px;
+    color: var(--primary2);
+    
 }
-.about main div{
-    width: 300px;
-    height: 150px;
-     background: linear-gradient(to right, rgba(50, 50, 50, 0.318), var(--green));
+.about main .imgabout{
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 350px;
+    /* background-color: var(--green2); */
+    /* animation: profile 5s infinite; */
+    /* box-shadow: 1px 1px 10px var(--primary2);  */
+}
+.about main .imgabout img{
+    width: 250px;
+    /* animation: profileimg 3s infinite; */
+    filter: drop-shadow(1px 1px 10px var(--primary1));
+}
+.about main .aboutme{
+    display: flex;
+    justify-content: space-around;
     flex-direction: column;
-    color: var(--primary2);
-    font-family: sans-serif;
-    text-align: center;
-    border-radius: 10px;
+}
+.about h1{
+    font-size: 30px;
+}
+.about main .extra{
+    display: flex;
+    /* justify-content: start; */
+    padding: 20px;
+    margin: 10px;
+    /* margin-bottom: 10px; */
+    /* background-color: red; */
+}
+.extra div button{
+   color: var(--primary2);
+   margin-bottom: 10px;
+   border: none;
+   /* width: 50px; */
+   height: 40px;
+   background: none;
+   font-size: 18px;
+}
+.extra div button::after{
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem ;
+    border-bottom: 0.1rem solid var(--green);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+.extra div button:hover{
+    color: var(--green);
+}
+.extra div button:hover::after{
+    transform: scale(0.5);
+}
+.extra .skill .coding{
     transition: 0.2s;
-    cursor: pointer;
+    opacity: 0;
 }
-.about main div:hover{
-    background: linear-gradient(to left, var(--green), rgba(50, 50, 50, 0.318));
+.extra .pendidikan .codingp{
+    transition: 0.2s;
+    opacity: 0;
+    
 }
+.extra .pengalaman p{
+    transition: 0.2s;
+    opacity: 0;
+
+}
+.extra{
+    /* background-color: aqua; */
+}
+.pengalaman{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* width: 200px; */
+    /* background-color: red; */
+}
+.pendidikan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    /* background-color: red; */
+}
+.skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    /* background-color: red; */
+}
+
 /* About End */
 
 
@@ -293,12 +358,9 @@ header{
     }
     /*Hero end */
         /* ABout start */
-    .about main{
-        display: flex;
-        flex-direction: column;
-        /* justify-content: center; */
-        align-items: center;
-    }
+.about main{
+   flex-direction: column;
+}
     /* ABout End */
 }
 
@@ -336,6 +398,8 @@ header{
     }
     .extra{
         display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     #menu{
         color: var(--green);
@@ -365,11 +429,6 @@ header{
         width: 100px;
     }
         /* ABout start */
-    .about main{
-        display: flex;
-        flex-direction: column;
-        /* justify-content: center; */
-        align-items: center;
-    }
+
     /* ABout End */
 }
